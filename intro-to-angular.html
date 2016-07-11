@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app ="Food">
+<head>
+    <title>Intro to Angular</title>
+
+    <script type ="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+
+    <script type ="text/javascript" src ="intro-to-angular.js"></script>
+
+</head>
+ 
+<body ng-controller ="menu">
+	<div>	
+		<h1 ng-bind = "subGreeting"></h1>
+		<button ng-click ="yes()">Yes</button>
+	</div>
+	<div>
+		<button ng-click = "list()">List</button>
+			<ul ng-bind = "listDrinks">
+  				<li>Coffee</li>
+  				<li>Tea</li>
+  				<li>Milk</li>
+			</ul>
+	</div>
+
+
+</body>
+</html>
