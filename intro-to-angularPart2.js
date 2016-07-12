@@ -1,15 +1,29 @@
 // Part 2
 
-angular.module('Coloring',[])
+angular.module("Part2", []);
 
-angular.module('Coloring') 
+angular.module("Part2")
 	.controller('alpha', [
 		'$scope',
-		letsColor
-	]);
+		pt2
 
-function letsColor($scope) {
-	$scope.paragraphOne = "Six started far placing saw respect females old. Civilly why how end viewing attempt related enquire visitor. Man particular insensible celebrated conviction stimulated principles day. Sure fail or in said west.";
+		]);
 
-}
+	function pt2 ($scope) {
+		$scope.headingOne = "Intro to Angular";
+		$scope.exclamation = "!";
+		$scope.exclamation2 = "!";
+		$scope.exclamation3 = "!";
+		$scope.remove = " ";
 
+			$scope.showConfirm = function() {
+				var x = confirm("Are you sure you want to Navigate to this State?");
+				if (x === true) {
+					window.location = this.href;
+				}
+				else {
+					event.preventDefault();
+					
+				}
+			}
+	}
